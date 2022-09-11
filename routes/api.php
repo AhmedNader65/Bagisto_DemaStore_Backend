@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\products\HomeController;
-use Illuminate\Http\Request;
+use App\Http\Controllers\products\MyProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('home', [HomeController::class, 'index']);
+
+Route::get('products', [MyProductController::class, 'allResources']);
